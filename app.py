@@ -42,7 +42,8 @@ def sms():
     if(hash == "Admin12345@2022Ucaldas"):
         destination = request.form['destination']
         message = request.form['message']
-        client = request.form['client']
+        # client = request.form['client']
+        client = "" #aws for aws, anything else for twilio
         if(client == "aws"):
             # Create an SNS client
             client = boto3.client(
