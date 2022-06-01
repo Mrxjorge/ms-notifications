@@ -60,6 +60,7 @@ def sms():
                 PhoneNumber=destination,
                 Message=message
             )
+            return "OK"
         else:
             try:
                 account_sid = os.environ["account_sid"]
