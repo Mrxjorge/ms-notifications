@@ -31,8 +31,10 @@ def email():
             print(response.status_code)
             print(response.body)
             print(response.headers)
+            return "Mensaje enviado exitosamente"
         except Exception as e:
             print(e.message)
+            return "No se pudo enviar mensaje"
     else:
         return "hash_error"
 
